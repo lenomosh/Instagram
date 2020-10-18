@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.HeaderTemplate,.authUser{
+  z-index: 100;
+  font-weight: 500;
+  padding: 10px 5px;
+  height: 60px;
+  font-size: 1rem ;
+  overflow: hidden;
+  margin: 0;
+  a{
+    color: white;
+  }
+  .logo{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .user-actions{
+    margin: auto;
+  }
+  .links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: black ;
+    .link{
+      a{
+        color: black;
+      }
+      margin-left: 20px;
+    }
+  }
+  .loggedOutUser{
+  }
+  .loggedInUser,.loggedOutUser{
+    cursor: pointer;
+    float: right;
+    padding-right: 5px;
+    .username{
+      font-size: 1rem;
+      padding-left: 4px;
+      //float: right;
+
+    }
+  }
+  .float-right{
+    margin-right: auto;
+  }
+  .loggedInUser:hover{
+    color: #40a9ff;
+    transition: 1s linear;
+  }
+
+}
+.authUser{
+  z-index: 100;
+  font-weight: 500;
+  padding: 10px 5px;
+  height: 60px;
+  font-size: 1rem ;
+  background-color: white;
+  & *{
+    color: black;
+  }
+}
+body{
+  margin: o;
+  padding: 0;
+  overflow-x: hidden;
+}
