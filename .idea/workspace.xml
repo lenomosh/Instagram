@@ -22,66 +22,43 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/Category/PitchesFromCategory.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/environment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/AuthHomePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/user/create.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/user/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/root-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.action.types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.reducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/instagram.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/svg/arrow_left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/svg/arrow_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,8 +239,352 @@
       <workItem from="1602835333155" duration="100000" />
       <workItem from="1602835445536" duration="2636000" />
       <workItem from="1602926370453" duration="6456000" />
-      <workItem from="1602949389695" duration="5885000" />
+      <workItem from="1602949389695" duration="7231000" />
     </task>
+    <task id="LOCAL-00006" summary="added Comment.create">
+      <created>1602999609603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999609603</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added Post.create">
+      <created>1602999633044</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999633044</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added comment styling">
+      <created>1602999647323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999647323</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added post styling">
+      <created>1602999661424</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999661424</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added post env for react">
+      <created>1602999677258</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999677258</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added header.jsx">
+      <created>1602999694181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999694181</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added header.scss">
+      <created>1602999704200</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999704200</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added index.blade.php">
+      <created>1602999716874</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999716874</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added react index.js">
+      <created>1602999732993</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999732993</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added react post Index.jsx">
+      <created>1602999760173</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999760173</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added react comment index.jsx">
+      <created>1602999776058</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999776058</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added react comment index.scss">
+      <created>1602999793140</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999793140</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added react comment index.scss">
+      <created>1602999801129</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999801129</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added react main index.scss">
+      <created>1602999813232</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999813232</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added react LandingPage.component.jsx">
+      <created>1602999836411</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999836411</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added react LandingPage.styles.scss">
+      <created>1602999847752</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999847752</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added react login.jsx component">
+      <created>1602999863857</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999863857</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added react LoginPage.component.jsx page">
+      <created>1602999883257</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999883257</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added react LoginPage.styles.scss">
+      <created>1602999892998</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999892998</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added package.json">
+      <created>1602999904816</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999904816</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added 404">
+      <created>1602999915377</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999915377</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added PublicHomepage.jsx">
+      <created>1602999933144</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999933144</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added PublicHomepage.styles.scss">
+      <created>1602999942288</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999942288</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added comment.read.jsx">
+      <created>1602999960522</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999960522</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added post.react.jsx">
+      <created>1602999979561</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602999979561</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added coment.read.scss">
+      <created>1603000010385</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000010385</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added post.read.scss">
+      <created>1603000018446</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000018446</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added RegistrationPage.component.jsx">
+      <created>1603000029566</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000029566</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added RegistrationPage.styles.scss">
+      <created>1603000038798</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000038798</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added root-reducer.js">
+      <created>1603000052061</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000052061</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added serviceWorker.js">
+      <created>1603000065264</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000065264</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added store.js">
+      <created>1603000074644</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000074644</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added user.action.types.js">
+      <created>1603000084814</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000084814</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added user.actions.js">
+      <created>1603000098557</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000098557</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added user.reducer.jsx">
+      <created>1603000114956</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000114956</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added UserProfile.component.jsx">
+      <created>1603000127536</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000127536</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added setupTests.js">
+      <created>1603000207081</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000207081</updated>
+    </task>
+    <task id="LOCAL-00043" summary="added UserProfile.styles.scss">
+      <created>1603000218156</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000218156</updated>
+    </task>
+    <task id="LOCAL-00044" summary="added post.creat.jsx">
+      <created>1603000244206</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000244206</updated>
+    </task>
+    <task id="LOCAL-00045" summary="modified composer.json + .lock">
+      <created>1603000269815</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000269815</updated>
+    </task>
+    <task id="LOCAL-00046" summary="added base template">
+      <created>1603000286346</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000286346</updated>
+    </task>
+    <task id="LOCAL-00047" summary="modified app.js for react">
+      <created>1603000307636</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000307636</updated>
+    </task>
+    <task id="LOCAL-00048" summary="added App.test.js for tests">
+      <created>1603000323557</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000323557</updated>
+    </task>
+    <task id="LOCAL-00049" summary="added idea tools">
+      <created>1603000354440</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000354440</updated>
+    </task>
+    <task id="LOCAL-00050" summary="modified webpack.mix.js">
+      <created>1603000367210</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000367211</updated>
+    </task>
+    <task id="LOCAL-00051" summary="modified welcome.blade.php">
+      <created>1603000392249</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000392249</updated>
+    </task>
+    <task id="LOCAL-00052" summary="commited yarn.lock">
+      <created>1603000405169</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000405169</updated>
+    </task>
+    <task id="LOCAL-00053" summary="reverted all urls to react">
+      <created>1603000429020</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000429020</updated>
+    </task>
+    <task id="LOCAL-00054" summary="reverted all urls to react">
+      <created>1603000439845</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1603000439845</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +600,34 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added post.react.jsx" />
+    <MESSAGE value="added coment.read.scss" />
+    <MESSAGE value="added post.read.scss" />
+    <MESSAGE value="added RegistrationPage.component.jsx" />
+    <MESSAGE value="added RegistrationPage.styles.scss" />
+    <MESSAGE value="added root-reducer.js" />
+    <MESSAGE value="added serviceWorker.js" />
+    <MESSAGE value="added store.js" />
+    <MESSAGE value="added user.action.types.js" />
+    <MESSAGE value="added user.actions.js" />
+    <MESSAGE value="added user.reducer.jsx" />
+    <MESSAGE value="added UserProfile.component.jsx" />
+    <MESSAGE value="added setupTests.js" />
+    <MESSAGE value="added UserProfile.styles.scss" />
+    <MESSAGE value="added post.creat.jsx" />
+    <MESSAGE value="modified composer.json + .lock" />
+    <MESSAGE value="added base template" />
+    <MESSAGE value="modified app.js for react" />
+    <MESSAGE value="added App.test.js for tests" />
+    <MESSAGE value="added idea tools" />
+    <MESSAGE value="modified webpack.mix.js" />
+    <MESSAGE value="modified welcome.blade.php" />
+    <MESSAGE value="commited yarn.lock" />
+    <MESSAGE value="reverted all urls to react" />
+    <MESSAGE value="added barbel config for class compilation + auth controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added barbel config for class compilation + auth controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1320" height="292" key="GridCell.Tab.0.bottom" timestamp="1602998573900">
@@ -301,6 +650,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="113" y="27" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602931784399" />
+    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1603000463915">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603000463915" />
     <state x="347" y="174" width="672" height="677" key="run.anything.popup" timestamp="1602928676199">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
