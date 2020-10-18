@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="" />
+    <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/Category/PitchesFromCategory.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/environment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/AuthHomePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/user/create.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/components/user/login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/root-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.action.types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/redux/user/user.reducer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/instagram.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +91,16 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,9 +212,11 @@
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ix3HoDuEMnV8ZKC7LtYKA5n5eD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -131,10 +224,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,14 +261,42 @@
       <updated>1602835331638</updated>
       <workItem from="1602835333155" duration="100000" />
       <workItem from="1602835445536" duration="2636000" />
-      <workItem from="1602926370453" duration="3300000" />
+      <workItem from="1602926370453" duration="6456000" />
+      <workItem from="1602949389695" duration="5885000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state width="1320" height="292" key="GridCell.Tab.0.bottom" timestamp="1602998573900">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="292" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602998573900" />
+    <state width="1320" height="292" key="GridCell.Tab.0.center" timestamp="1602998573899">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="292" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602998573899" />
+    <state width="1320" height="292" key="GridCell.Tab.0.left" timestamp="1602998573898">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="292" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602998573898" />
+    <state width="1320" height="292" key="GridCell.Tab.0.right" timestamp="1602998573899">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="292" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602998573899" />
     <state x="113" y="27" width="1022" height="737" key="SettingsEditor" timestamp="1602931784399">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -162,5 +305,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" width="672" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602928676199" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602949785952">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1602949785952" />
   </component>
 </project>
