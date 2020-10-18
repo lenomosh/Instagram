@@ -5,9 +5,9 @@ import Axios from "axios";
 import apiUrls, {axiosHeader} from "../../environment";
 import {message} from "antd";
 import List from "antd/es/list";
-import PitchRead from "../../Pitch/read/read";
+import PostRead from "../../Post/read/read";
 
-const PitchesFromCategory = ()=>{
+const PostsFromCategory = ()=>{
     const [category, setCategory] = useState([]);
     const {category_id} = useParams();
     const [previousCategory_id, setPreviousCategory_id] = useState(null);
@@ -40,11 +40,11 @@ const PitchesFromCategory = ()=>{
     return(
         <List
             itemLayout="horizontal"
-            dataSource={category?.pitches}
+            dataSource={category?.posts}
             renderItem={item => (
                 <List.Item>
                     <div className="col-sm-12">
-                    <PitchRead pitch={item}/>
+                    <PostRead post={item}/>
 
                     </div>
                 </List.Item>
@@ -52,4 +52,4 @@ const PitchesFromCategory = ()=>{
         />
     )
 }
-export  default PitchesFromCategory
+export  default PostsFromCategory

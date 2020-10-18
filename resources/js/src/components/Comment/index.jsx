@@ -1,16 +1,16 @@
 import React, {useState} from 'react'
-import PitchCommentView from "./read/Read";
-import PitchCommentCreate from "./create/Create";
+import PostCommentView from "./read/Read";
+import PostCommentCreate from "./create/Create";
 
-const PitchCommentIndex = ({comments, pitchID})=>{
+const PostCommentIndex = ({comments, postID})=>{
     const [allComments, setAllComments] = useState([...comments]);
     return (
         <div className={'px-4'}>
             {allComments && allComments.map(comment =>
-                <PitchCommentView key={comment.id} comment={comment}/>
+                <PostCommentView key={comment.id} comment={comment}/>
             )}
-            <PitchCommentCreate onFinishedCreating={newComment=>setAllComments([...comments,newComment])} pitchID={pitchID}/>
+            <PostCommentCreate onFinishedCreating={newComment=>setAllComments([...comments,newComment])} postID={postID}/>
         </div>
     )
 }
-export default PitchCommentIndex
+export default PostCommentIndex

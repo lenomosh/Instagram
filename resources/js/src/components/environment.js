@@ -1,24 +1,20 @@
-const apiUrl = 'https://flask-pitching-app-api.herokuapp.com/api/'
+const apiUrl = 'http://localhost:8000/api/'
 export const axiosHeader = {
     'Accept' : 'application/json',
     'Content-Type': 'application/json'
 }
 const apiUrls = {
-    user_create:apiUrl+'auth/v1.0/register',
-    user_login:apiUrl+'auth/v1.0/login',
-    user_logout:apiUrl+'auth/v1.0/logout',
-    user_profile:apiUrl+'user_profile/',
-    pitch:{
-        create:apiUrl+'pitch',
-        read:apiUrl+'pitch/',
-        index:apiUrl+'pitch',
-        del:apiUrl+'pitch/'
+    user:{
+        create:apiUrl+'register',
+        login:apiUrl+'login',
+        logout:apiUrl+'logout',
+        profile:apiUrl+'profile/',
     },
-    category:{
-        create:apiUrl+'category',
-        read:apiUrl+'category/',
-        del:apiUrl+'category/',
-        index:apiUrl+'category'
+    post:{
+        create:apiUrl+'post',
+        read:apiUrl+'post/',
+        index:apiUrl+'post',
+        del:apiUrl+'post/'
     },
     profile_picture:{
         read:apiUrl+'profile_picture/',

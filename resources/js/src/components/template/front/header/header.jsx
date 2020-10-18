@@ -33,7 +33,7 @@ const HeaderTemplate = ({logoutUser,currentUser}) =>{
                     </div>
 
                     <div className="link">
-                        <Link to={'/create'}>Post New Pitch</Link>
+                        <Link to={'/create'}>Post New Post</Link>
                     </div>
 
                 </div>}

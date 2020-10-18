@@ -23,42 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/overlays/09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/svg/arrow_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/mdbootstrap/svg/arrow_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/Category/PitchesFromCategory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/Category/PitchesFromCategory.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/environment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/hompage/AuthHomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/hompage/AuthHomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,14 +222,7 @@
       <workItem from="1602835333155" duration="100000" />
       <workItem from="1602835445536" duration="2636000" />
       <workItem from="1602926370453" duration="6456000" />
-      <workItem from="1602949389695" duration="7231000" />
-    </task>
-    <task id="LOCAL-00006" summary="added Comment.create">
-      <created>1602999609603</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1602999609603</updated>
+      <workItem from="1602949389695" duration="16712000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
@@ -584,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603000439845</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added barbel config for class compilation + auth controllers">
+      <created>1603001033643</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1603001033644</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,6 +613,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="added barbel config for class compilation + auth controllers" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603033009301">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1603033009301" />
+    <state x="110" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603042276928">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="110" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1603042276928" />
     <state width="1320" height="292" key="GridCell.Tab.0.bottom" timestamp="1602998573900">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -650,10 +641,14 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="113" y="27" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602931784399" />
-    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1603000463915">
+    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1603001040177">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603000463915" />
+    <state x="278" y="129" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603001040177" />
+    <state x="0" y="27" width="679" height="741" key="find.popup" timestamp="1603042650444">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="679" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1603042650444" />
     <state x="347" y="174" width="672" height="677" key="run.anything.popup" timestamp="1602928676199">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

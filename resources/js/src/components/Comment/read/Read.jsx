@@ -2,7 +2,7 @@ import React from 'react'
 import {Comment,Avatar} from "antd";
 import apiUrls from "../../environment";
 
-const PitchCommentView =({comment})=>{
+const PostCommentView =({comment})=>{
     return (
         <div>
             {comment && <Comment
@@ -22,4 +22,4 @@ const PitchCommentView =({comment})=>{
 
     )
 }
-export default  PitchCommentView
+export default  PostCommentView

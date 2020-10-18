@@ -12,11 +12,11 @@ import Input from "antd/es/input";
 import {useSelector} from "react-redux";
 import Spin from "antd/es/spin";
 const {Option} = Select
-const PitchCreate =()=>{
+const PostCreate =()=>{
     const currentuser = useSelector(state=>state.user.currentUser)
-    const [pitchValue, setPitchValue] = useState('');
+    const [postValue, setPostValue] = useState('');
     const [categories, setCategories] = useState(null);
-    const [pitchCategoryID, setPitchCategoryID] = useState('');
+    const [postCategoryID, setPostCategoryID] = useState('');
     const [newCategory, setNewCategory] = useState('');
     const [loading, setLoading] = useState(false);
     useEffect(() => {
@@ -44,23 +44,23 @@ const PitchCreate =()=>{
     }
 
     const submitForm = ()=>{
-        if (!pitchCategoryID){
-            return message.warn("Select category to which the pitch should belong!",6)
+        if (!postCategoryID){
+            return message.warn("Select category to which the post should belong!",6)
         }
-        if (!pitchValue){
-            return message.info("You really want to submit a blank pitch? Wow",6)
+        if (!postValue){
+            return message.info("You really want to submit a blank post? Wow",6)
         }
-        // console.log(pitchValue.length)
-        // console.log(pitchValue)
-        if (pitchValue.length<9){
-            return message.warn("Seriously, your pitch is too short. :XD",5)
+        // console.log(postValue.length)
+        // console.log(postValue)
+        if (postValue.length<9){
+            return message.warn("Seriously, your post is too short. :XD",5)
         }
         setLoading(true)
-        Axios.post(apiUrls.pitch.create
+        Axios.post(apiUrls.post.create
         ,{
-                content:pitchValue,
+                content:postValue,
                 user_id:currentuser.user.id,
-                category_id:pitchCategoryID
+                category_id:postCategoryID
             },
             {
            headers: {
@@ -69,16 +69,16 @@ const PitchCreate =()=>{
            }
             })
             .then(res=>{
-                message.success("Pitch created successfully.",5)
-                setPitchCategoryID('')
-                setPitchValue('')
+                message.success("Post created successfully.",5)
+                setPostCategoryID('')
+                setPostValue('')
                 setLoading(false)
                 // console.log(res.data)
         })
             .catch(err=>{
 
                 if (err.response?.status===500){
-                    message.error("Looks like your pitch is too long!",5)
+                    message.error("Looks like your post is too long!",5)
                 }
                 else{
 
@@ -141,14 +141,14 @@ const PitchCreate =()=>{
                                 </div>
                             </div>
                         )}
-                        onChange={setPitchCategoryID}
+                        onChange={setPostCategoryID}
                     >
                         {categories && categories.map(item => (
                             <Option key={item.id} value={item.id}>{item.name}</Option>
                         ))}
                     </Select>
-                    <p className={'pt-4'}>Pitch:</p>
-                    <ReactQuill className={'my-4'}  style={{backgroundColor:'white',height:"100px"}} theme={'snow'} value={pitchValue} onChange={setPitchValue}/>
+                    <p className={'pt-4'}>Post:</p>
+                    <ReactQuill className={'my-4'}  style={{backgroundColor:'white',height:"100px"}} theme={'snow'} value={postValue} onChange={setPostValue}/>
 
                 </div>
                 <div className="card-footer">
@@ -161,4 +161,4 @@ const PitchCreate =()=>{
         </Spin>
     )
 }
-export default  PitchCreate
+export default  PostCreate

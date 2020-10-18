@@ -6,7 +6,7 @@ import Axios from "axios";
 import apiUrls, {axiosHeader} from "../environment";
 import {useSelector} from "react-redux";
 import List from "antd/es/list";
-import PitchRead from "../Pitch/read/read";
+import PostRead from "../Post/read/read";
 import Upload from "antd/es/upload";
 import {UploadOutlined} from '@ant-design/icons'
 const { Title,  Text } = Typography;
@@ -106,13 +106,13 @@ const UserProfile = () => {
                 </Col>
             </Row>
             <div className="pt-lg-5 container">
-                <p className="h4">Pitches</p>
+                <p className="h4">Posts</p>
                 <List
                     itemLayout="horizontal"
-                    dataSource={user?.pitches}
+                    dataSource={user?.posts}
                     renderItem={item => (
                         <List.Item>
-                            <PitchRead pitch={item}/>
+                            <PostRead post={item}/>
                         </List.Item>
                     )}
                 />

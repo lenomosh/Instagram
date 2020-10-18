@@ -5,7 +5,7 @@ const LandingPage = ()=>{
     return(
         <div className={'landingPage'}>
             <div className="welcome-wrapper">
-                <p className={'welcome'}>Welcome to One Minute Pitch</p>
+                <p className={'welcome'}>Welcome to One Minute Post</p>
                 <p className="description">
                     World's first virtual community made by the youth for the youth to promote their business.
                 </p>

@@ -1,10 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import Axios from "axios";
-import PitchRead from "./read/read";
+import PostRead from "./read/read";
 import apiUrls, {axiosHeader} from "../environment";
 import {connect} from "react-redux";
 import {Spin} from "antd";
-export const PitchAction = ({data,onFinishedSubmit, onErrorOccurred,access_token})=>{
+export const PostAction = ({data,onFinishedSubmit, onErrorOccurred,access_token})=>{
     Axios.post(apiUrls.action.create,data,{
         headers:{
             ...axiosHeader,
@@ -15,22 +15,22 @@ export const PitchAction = ({data,onFinishedSubmit, onErrorOccurred,access_token
         .catch(err=>onErrorOccurred(err))
 }
 
-const PitchIndex = ({currentUser})=>{
-    const [pitches, setPitches] = useState(null);
+const PostIndex = ({currentUser})=>{
+    const [posts, setPosts] = useState(null);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        if (!pitches){
+        if (!posts){
             setLoading(true)
             Axios
-                .get(apiUrls.pitch.index,{
+                .get(apiUrls.post.index,{
                     headers:{
                         ...axiosHeader,
                         Authorization:'Bearer '+ currentUser.access_token
                     }
                 })
                 .then(res=> {
-                    setPitches(res.data)
+                    setPosts(res.data)
                     setLoading(false)
                 })
                 .catch(err=> {
@@ -39,14 +39,14 @@ const PitchIndex = ({currentUser})=>{
                 })
         }
     }, );
-    // console.log('Pitchtes from pitch index',pitches)
+    // console.log('Posts from post index',posts)
 
     return (
-        <Spin spinning={loading} className={'pitchIndex'}>
-            {pitches && pitches.map(pitch=><PitchRead key={pitch.id} pitch ={pitch}/>
+        <Spin spinning={loading} className={'postIndex'}>
+            {posts && posts.map(post=><PostRead key={post.id} post ={post}/>
             )}
         </Spin>
     )
 }
 const mapStateToProps =({user:{currentUser}})=>({currentUser})
-export default connect(mapStateToProps)  (PitchIndex)
+export default connect(mapStateToProps)  (PostIndex)

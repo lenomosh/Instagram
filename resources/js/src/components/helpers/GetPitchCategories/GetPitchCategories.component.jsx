@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 import List from "antd/es/list";
 import {Link} from "react-router-dom";
 
-const GetCategoryPitches = ()=>{
+const GetCategoryPosts = ()=>{
     const [categories, setCategories] = useState([]);
     const access_token  = useSelector(state=>state.user.currentUser.access_token)
     useEffect(() => {
@@ -36,4 +36,4 @@ const GetCategoryPitches = ()=>{
         />
     )
 }
-export default GetCategoryPitches
+export default GetCategoryPosts

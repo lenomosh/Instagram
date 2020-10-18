@@ -9,19 +9,19 @@ import {
     UserOutlined
 } from "@ant-design/icons";
 import HTMLReactParser from "html-react-parser";
-import PitchCommentIndex from "../../Comment";
+import PostCommentIndex from "../../Comment";
 import Moment from "react-moment";
 import apiUrls from "../../environment";
 import './read.scss'
-import {PitchAction} from "../Index";
+import {PostAction} from "../Index";
 import {message} from "antd/es";
 import {useSelector} from "react-redux";
 
-const PitchRead = ({pitch}) =>{
-    const {content,author,comments,CREATED_AT,likes,dislikes} = pitch
+const PostRead = ({post}) =>{
+    const {content,author,comments,CREATED_AT,likes,dislikes} = post
     const currentUser = useSelector(state=>state.user.currentUser)
     // console.log(apiUrls.profile_picture.read+author.profile_picture.id)
-    const handlePitchAction =data=>{
+    const handlePostAction =data=>{
        const input ={
            access_token:currentUser.access_token,
             data:data,
@@ -41,14 +41,14 @@ const PitchRead = ({pitch}) =>{
             },
 
         }
-        PitchAction(input)
+        PostAction(input)
     }
 
 
     return (
-        <div className={'PitchRead'}>
+        <div className={'PostRead'}>
 
-            <div className="pitch-item py-2">
+            <div className="post-item py-2">
                 <div className="card">
                     <div className="card-header">
                         <div className="row">
@@ -64,10 +64,10 @@ const PitchRead = ({pitch}) =>{
                             </div>
                             <div className={'col-sm-7 align-self-center'}>
                                 <div className="row flex-column">
-                                    <div className="pitch-author-name">
+                                    <div className="post-author-name">
                                         <a href={`/profile/${author.id}`}>{author.name}</a>
                                     </div>
-                                    <div className="pitch-created-at">
+                                    <div className="post-created-at">
                                         <Moment toNow>{CREATED_AT}</Moment>
                                     </div>
 
@@ -86,34 +86,34 @@ const PitchRead = ({pitch}) =>{
                         <div className="row">
                             <div className="col-sm-3 align-self-center">
                                 <LikeOutlined
-                                    onClick={()=>handlePitchAction({
+                                    onClick={()=>handlePostAction({
                                         user_id:1,
                                         action_type:1,
-                                        pitch_id:pitch.id
+                                        post_id:post.id
                                     })}
-                                    className={'pitch-action-icon'} />
-                                <span className={'pitch-action-stats'}>{likes}</span>
+                                    className={'post-action-icon'} />
+                                <span className={'post-action-stats'}>{likes}</span>
                             </div>
                             <div className="col-sm-3 align-self-center">
-                                <DislikeOutlined onClick={()=>handlePitchAction({
+                                <DislikeOutlined onClick={()=>handlePostAction({
                                     user_id:1,
                                     action_type:0,
-                                    pitch_id:pitch.id
+                                    post_id:post.id
                                 })}
-                                                 className={'pitch-action-icon'} />
-                                <span className={'pitch-action-stats'}>{dislikes}</span>
+                                                 className={'post-action-icon'} />
+                                <span className={'post-action-stats'}>{dislikes}</span>
                             </div>
                             <div className="col-sm-3">
-                                <CommentOutlined className={'pitch-action-icon pitch-action-icon-clicked'}/>
-                                <span className={'pitch-action-stats'}>{comments.length}</span>
+                                <CommentOutlined className={'post-action-icon post-action-icon-clicked'}/>
+                                <span className={'post-action-stats'}>{comments.length}</span>
                             </div>
                             <div className="col-sm-3 float-right">
-                                <SendOutlined className={'pitch-action-icon float-right'}/>
+                                <SendOutlined className={'post-action-icon float-right'}/>
                             </div>
                         </div>
                     </div>
                     <div className="comments">
-                        <PitchCommentIndex pitchID={pitch.id} comments ={comments}  />
+                        <PostCommentIndex postID={post.id} comments ={comments}  />
                     </div>
                 </div>
             </div>
@@ -121,4 +121,4 @@ const PitchRead = ({pitch}) =>{
     )
 
 }
-export default PitchRead
+export default PostRead

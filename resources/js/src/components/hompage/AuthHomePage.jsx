@@ -1,12 +1,12 @@
 import React from 'react'
 import HeaderTemplate from "../template/front/header/header";
 import {Route,Redirect, Switch} from "react-router-dom";
-import PitchIndex from "../Pitch/Index";
-import PitchCreate from "../Pitch/create/Create";
+import PostIndex from "../Post/Index";
+import PostCreate from "../Post/create/Create";
 import {Layout} from "antd";
 import UserProfile from "../ProfilePage/UserProfile.component";
-import GetCategoryPitches from "../helpers/GetPitchCategories/GetPitchCategories.component";
-import PitchesFromCategory from "../Comment/Category/PitchesFromCategory.component";
+import GetCategoryPosts from "../helpers/GetPostCategories/GetPostCategories.component";
+import PostsFromCategory from "../Comment/Category/PostsFromCategory.component";
 import {useSelector} from "react-redux";
 import PublicHomepage from "./PublicHomepage";
 import PageNotFound from "../../Pages/PageNotFound/PageNotFound";
@@ -31,14 +31,14 @@ const AuthHomepage = ({currentUser})=>{
                                 <p className="h4">Categories</p>
                             </div>
                             <div className="card-body">
-                                <GetCategoryPitches/>
+                                <GetCategoryPosts/>
                             </div>
                         </div>
                     </div>
                     <div className="col-sm-6">
-                            <Route exact path={'/'} render={()=><PitchIndex/>}/>
-                            <Route exact path={'/create'} render={()=><PitchCreate/>}/>
-                            <Route exact path={'/categories/:category_id'} render={()=><PitchesFromCategory/>}/>
+                            <Route exact path={'/'} render={()=><PostIndex/>}/>
+                            <Route exact path={'/create'} render={()=><PostCreate/>}/>
+                            <Route exact path={'/categories/:category_id'} render={()=><PostsFromCategory/>}/>
 
                     </div>
                     <div className="col-sm-3">
@@ -48,7 +48,7 @@ const AuthHomepage = ({currentUser})=>{
             </Content>
 
             </Switch>
-            <Footer style={{ textAlign: 'center' }}>One Minute Pitch ©2020 Created by <a href="https://linkedin.com/in/lenomosh" target={'_blank'}>Lennox Omondi</a></Footer>
+            <Footer style={{ textAlign: 'center' }}>One Minute Post ©2020 Created by <a href="https://linkedin.com/in/lenomosh" target={'_blank'}>Lennox Omondi</a></Footer>
         </Layout>
     )
 }

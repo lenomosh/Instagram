@@ -23,7 +23,7 @@ const Editor = ({ onChange, onSubmit, submitting, value }) => (
     </>
 );
 
-class PitchCommentCreate extends React.Component {
+class PostCommentCreate extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -41,7 +41,7 @@ class PitchCommentCreate extends React.Component {
         this.setState({loading:true})
         Axios.post(apiUrls.comment.create,{
             content:this.state.value,
-            pitch_id:this.props.pitchID,
+            post_id:this.props.postID,
             user_id:this.props.currentUser.user.id
         },{
             headers:{
@@ -99,4 +99,4 @@ class PitchCommentCreate extends React.Component {
     }
 }
 const mapStateToProps =({user:{currentUser}})=>({currentUser})
-export default connect(mapStateToProps) (PitchCommentCreate)
+export default connect(mapStateToProps) (PostCommentCreate)
