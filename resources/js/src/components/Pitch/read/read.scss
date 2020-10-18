@@ -1,0 +1,45 @@
+.PitchRead{
+  .pitch-item{
+    .card{
+      .card-header{
+        padding: 5px 20px;
+        //&>.row{
+        //}
+
+        .pitch-author-name{
+          font-weight: 500;
+          font-size: 1.3rem;
+          letter-spacing: 1px;
+        }
+        .pitch-created-at{
+          font-style: italic;
+          color: grey;
+        }
+      }
+      .card-footer{
+        .row{
+          &>div{
+            align-self: center;
+          }
+          .pitch-action-icon{
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #40a9ff;
+
+          }
+          .pitch-action-stats{
+            font-size: 1.2rem;
+            color: #40a9ff;
+            padding-left: 10px;
+            line-height: 1.5rem;
+            vertical-align: middle;
+          }
+          .pitch-action-icon-clicked{
+            color: green
+          }
+        }
+      }
+    }
+  }
+}
+
