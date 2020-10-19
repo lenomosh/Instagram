@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::apiResource('/post', \App\Http\Controllers\PostController::class);
 Route::apiResource('/user',\App\Http\Controllers\UserController::class);
+Route::apiResource('/comment',\App\Http\Controllers\CommentController::class);
 Route::prefix('/user')->group(function (){
 
 });
