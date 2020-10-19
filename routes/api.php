@@ -19,6 +19,8 @@ Route::apiResource('/post', \App\Http\Controllers\PostController::class);
 Route::apiResource('/user',\App\Http\Controllers\UserController::class);
 Route::apiResource('/comment',\App\Http\Controllers\CommentController::class);
 Route::apiResource('/like',\App\Http\Controllers\LikeController::class);
+Route::apiResource('/profile',\App\Http\Controllers\ProfileController::class);
+Route::apiResource('/follower',\App\Http\Controllers\FollowerController::class);
 //Route::prefix('/user')->group(function (){
 //
 //});
