@@ -1,19 +1,20 @@
 import React from 'react'
 import './LandingPage.styles.scss'
-import {Button} from "antd";
+import UserLogin from "../../components/user/login.component";
 const LandingPage = ()=>{
     return(
-        <div className={'landingPage'}>
-            <div className="welcome-wrapper">
-                <p className={'welcome'}>Welcome to One Minute Post</p>
-                <p className="description">
-                    World's first virtual community made by the youth for the youth to promote their business.
-                </p>
-                <a className={'btn btn-success'} href={'/register'}>Join Us Today</a>
+        <div className={'landingPage container'}>
+            <div className="row">
+                <div className="col-sm-7">
+                    <div className="landing-page-promo">
 
+                    </div>
+                </div>
+                <div className="col-sm-5">
+                    <UserLogin/>
+                </div>
             </div>
         </div>
     )
-
 }
 export default LandingPage

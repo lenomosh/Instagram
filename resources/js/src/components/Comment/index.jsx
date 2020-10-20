@@ -1,15 +1,12 @@
 import React, {useState} from 'react'
-import PostCommentView from "./read/Read";
 import PostCommentCreate from "./create/Create";
+import PostCommentRead from "./read/Read";
 
-const PostCommentIndex = ({comments, postID})=>{
-    const [allComments, setAllComments] = useState([...comments]);
+const PostCommentIndex = ()=>{
     return (
         <div className={'px-4'}>
-            {allComments && allComments.map(comment =>
-                <PostCommentView key={comment.id} comment={comment}/>
-            )}
-            <PostCommentCreate onFinishedCreating={newComment=>setAllComments([...comments,newComment])} postID={postID}/>
+            <PostCommentRead />
+            {/*<PostCommentCreate onFinishedCreating={newComment=>setAllComments([...comments,newComment])} postID={postID}/>*/}
         </div>
     )
 }

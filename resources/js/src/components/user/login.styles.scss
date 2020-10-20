@@ -1,0 +1,43 @@
+.loginComponent{
+  .card{
+    border-radius: 7px;
+    .card-body{
+      padding-top: 0;
+    }
+  }
+
+  .login-form-title{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  width: 100%;
+  .login-form-button{
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  button{
+    border-radius: 5px;
+    .login-social-link{
+      color: #40a9ff;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+  }
+  .login-forgot-password{
+    display: block;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+  .login-create-account{
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .ant-form-item{
+    margin-bottom: 4px !important;
+  }
+}

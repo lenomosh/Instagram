@@ -1,0 +1,82 @@
+.PostRead{
+  .card-body{
+    padding: 0;
+  }
+  .post-read-card-header{
+    padding: 16px;
+
+    .post-read-card-header-avatar{
+      font-size: 2rem;
+    }
+    .post-read-username{
+      padding-left: 10px;
+      color: black;
+      font-size: 1rem;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .post-read-options{
+      float: right;
+      .post-read-options-icon{
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .post-read-media-content{
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  max-height: 1000px;
+    @keyframes like-heart-fade-in {
+      from{
+        opacity: 0;
+        font-size: 1px;
+      }
+      to{
+        opacity: 1;
+        font-size: 200px;
+      }
+
+    }
+    .post-read-double-tap-icon{
+      position: absolute;
+      margin: auto;
+      height: inherit;
+      top: 30%;
+      font-size: 200px;
+      color: white;
+      vertical-align: middle;
+      width: 100%;
+      text-align: center;
+      animation: like-heart-fade-in .5s  ;
+      animation-direction: alternate;
+    }
+}
+  .post-read-actions{
+    .post-read-action-icon{
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: 20px;
+    }
+  }
+  .post-read-insight{
+    padding: 16px;
+    .post-read-likes-count{
+      padding: 16px 0;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .post-read-caption{
+      .post-read-caption-author{
+        font-weight: 600;
+      }
+
+    }
+
+  }
+}
+

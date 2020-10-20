@@ -12,13 +12,12 @@ const { TextArea } = Input;
 
 const Editor = ({ onChange, onSubmit, submitting, value }) => (
     <>
-        <Form.Item>
-            <TextArea rows={3} onChange={onChange} value={value} />
-        </Form.Item>
-        <Form.Item>
-            <Button htmlType="submit" loading={submitting} onClick={onSubmit} type="primary">
-                Add Comment
-            </Button>
+        <Form.Item >
+            <Input suffix={
+                <Button htmlType="submit" disabled={value.length<2} loading={submitting} onClick={onSubmit} type="link">
+                    Add Comment
+                </Button>
+            } onChange={onChange} value={value} size={"large"}/>
         </Form.Item>
     </>
 );
@@ -52,12 +51,9 @@ class PostCommentCreate extends React.Component {
                 message.success("Comment posted successfully!",5)
                 this.props.onFinishedCreating(res.data)
                 this.setState({loading:false})
-
-                // console.log(res.data)
             }
         ).catch(err=>{
             message.error(err.response.data.description,5)
-            // console.log(err.response)
             this.setState({loading:true})
 
         })
@@ -74,23 +70,17 @@ class PostCommentCreate extends React.Component {
     };
 
     render() {
-        const {submitting, value,loading } = this.state;
-
+        const {value,loading } = this.state;
         return (
             <Spin spinning={loading}>
                 <Comment
-                    avatar={
-                        <Avatar
-                            src={apiUrls.profile_picture.read+this.props.currentUser.user?.profile_picture?.id}
-                            alt={this.props.currentUser.user?.name}
-                        />
-                    }
                     content={
                         <Editor
                             onChange={this.handleChange}
                             onSubmit={this.handleSubmit}
                             submitting={loading}
                             value={value}
+
                         />
                     }
                 />

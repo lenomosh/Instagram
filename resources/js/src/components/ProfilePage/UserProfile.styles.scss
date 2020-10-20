@@ -1,9 +1,110 @@
-.UserProfile{
-  .seller-name{
-    margin-bottom: 0;
+.user-profile{
+  .user-profile-header{
+    .user-profile-header-avatar{
+      margin: auto;
+    }
+    .user-profile-header-user-actions{
+      span{
+        margin-right: 20px;
+      }
+      .user-profile-header-username{
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .user-profile-edit-button{
+        button{
+          font-weight: bold;
+          background-color: transparent;
+          padding: 3px;
+          border-radius: 5px;
+          border: 1px solid #bfbfbf;
+        }
+      }
+      .user-profile-setting-button{
+        .user-profile-settings-icon{
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .user-profile-header-user-stats{
+      padding: 20px 0;
+      font-size: 1rem;
+      .user-profile-user-stat{
+        margin-right: 40px;
+        b{
+          font-weight: bold;
+        }
+      }
+    }
+    .user-profile-header-user-name{
+      font-weight: bold;
+    }
 
   }
-  .text-bold{
-    font-weight: 500 !important ;
+  .user-profile-body{
+    //background-color: #fff;
   }
+  .user-post-wrapper{
+    position: relative;
+    background-color: red;
+    width: 293px;
+    height: 293px;
+    cursor: pointer;
+
+    @keyframes fadeIn {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+    .user-post-wrapper-overlay{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.5);
+      -webkit-animation: fadeIn .2s ease-in;
+      -o-animation: fadeIn .2s ease-in;
+      animation: fadeIn .2s ease-in;
+    }
+    .user-post-stats{
+      position: absolute;
+      text-align: center;
+      top: 45%;
+      width: 100%;
+      margin: auto;
+      color: white;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      vertical-align: middle;
+      .user-post-like-count{
+          margin-right: 30px;
+          vertical-align: middle;
+          .user-post-like-count-icon{
+            padding-right: 5px;
+            vertical-align: middle;
+          }
+      }
+      .user-post-comment-count{
+        margin-right: 20px;
+        vertical-align: middle;
+        .user-post-comment-count-icon{
+          padding-right: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .load-user-posts-container{
+    max-width: 935px;
+    .col-sm-4{
+      margin: 10px 0;
+    }
+  }
+
 }
