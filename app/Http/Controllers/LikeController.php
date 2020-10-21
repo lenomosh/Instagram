@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Like;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Mockery\Exception;
 
 class LikeController extends Controller
@@ -27,19 +28,23 @@ class LikeController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'user_id'=>'required|int',
+        $validations = Validator::make($request->all(),[
             'post_id'=>'required|int'
         ]);
-        $user_id = $request->get('user_id');
+        if ($validations->fails()) {
+            return response()->json(['errors'=>$validations->errors()->all()],422);
+        }
+        $user_id = $request->user()->id;
         $post_id = $request->get('post_id');
         $query = Like::where('user_id',$user_id)->where('post_id',$post_id)->get();
         if (count($query)) {
             return response()->json("Already Liked",409);
-
         }
-        $like = Like::create($request->all());
-        return response()->json($like,200);
+        $like = Like::create([
+            'post_id'=>$post_id,
+            'user_id'=>$user_id
+        ]);
+        return response()->json(["message"=>"Liked!"],200);
     }
 
     /**

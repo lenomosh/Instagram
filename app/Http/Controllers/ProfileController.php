@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Follower;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -15,9 +16,13 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(Request $request)
     {
-        $profiles = Profile::all();
+        $profiles = Profile::with(['owner.posts.likes','owner.posts.comments','followers'])->get();
+        foreach ($profiles as $profile){
+            $profile['user_has_followed'] = Follower::where('user_id',$request->user()->id)->where('id',$profile->id)->first();
+
+        }
         return response()->json($profiles,200);
     }
 
@@ -41,11 +46,14 @@ class ProfileController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Profile  $profile
+     * @param Request $request
+     * @param \App\Models\Profile $profile
      * @return \Illuminate\Http\JsonResponse
      */
-    public function show(Profile $profile)
+    public function show(Request $request,Profile $profile)
     {
+        $profile->load(['owner.posts.likes','owner.posts.comments','followers']);
+        $profile['user_has_followed'] = Follower::where('user_id',$request->user()->id)->where('id',$profile->id)->first();
         return response()->json($profile,200);
     }
 
@@ -71,7 +79,7 @@ class ProfileController extends Controller
             if (!is_null($profile->profile_picture)) {
                 Storage::delete($profile->profile_picture);
             }
-            $path = $request->file('image')->store('profile_pictures');
+            $path = $request->file('image')->store('public/profile_pictures');
             $profile->profile_picture = $path;
         }
         if ($request->has('bio')) {

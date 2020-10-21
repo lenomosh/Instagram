@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Mockery\Exception;
 
 class CommentController extends Controller
@@ -27,13 +28,18 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validator= Validator::make($request->all(),[
             'content'=>'string|required',
-            'user_id'=>'int|required',
             'post_id'=>'int|required'
         ]);
-        $comment = Comment::create($request->all());
-        return response()->json($comment,200);
+        if ($validator->fails()) {
+            return response()->json(['errors'=>$validator->errors()->all()],422);
+        }
+
+        $user_id = $request->user()->id;
+        $request['user_id']=$user_id;
+        $comment = Comment::create( $request->all());
+        return response()->json($comment->load(['author']),200);
     }
 
     /**

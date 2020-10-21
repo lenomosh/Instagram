@@ -10,6 +10,10 @@ class Profile extends Model
     use HasFactory;
     protected $guarded = [];
     public function owner() {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo('App\Models\User','user_id');
+    }
+    public function followers () {
+        return $this->hasMany('App\Models\Follower');
+
     }
 }

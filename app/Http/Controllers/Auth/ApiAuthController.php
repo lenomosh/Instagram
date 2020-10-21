@@ -41,7 +41,7 @@ class ApiAuthController extends Controller
         $profile = Profile::create([
             'user_id'=>$user->id
         ]);
-        $response = ['token' => $token];
+        $response = ['token' => $token,'user'=>$user];
         return response($response, 200);
     }
 
@@ -52,7 +52,7 @@ class ApiAuthController extends Controller
         ]);
         if ($validator->fails())
         {
-            return response(['errors'=>$validator->errors()->all()], 422);
+            return response(['errors'=>$validator->errors()->all()], 400);
         }
         $user = User::orWhere('email', $request->username)
                     ->orWhere('username',$request->username)
@@ -61,15 +61,15 @@ class ApiAuthController extends Controller
         if ($user) {
             if (Hash::check($request->password, $user->password)) {
                 $token = $user->createToken('Laravel Password Grant Client')->accessToken;
-                $response = ['token' => $token];
+                $response = ['token' => $token,'user'=>$user];
                 return response($response, 200);
             } else {
                 $response = ["message" => "Password mismatch"];
-                return response($response, 422);
+                return response($response, 409);
             }
         } else {
             $response = ["message" =>'User does not exist'];
-            return response($response, 422);
+            return response($response, 404);
         }
     }
 

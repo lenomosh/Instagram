@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Like;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use Mockery\Exception;
 use Psy\Util\Str;
 
@@ -15,9 +17,13 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(Request $request)
     {
         $all_posts = Post::with(['author.profile','comments.author','likes'])->get();
+        foreach ($all_posts as $post){
+            $post['path'] = Storage::url($post['path']);
+            $post['user_has_liked'] = Like::where('user_id',$request->user()->id)->first();
+        }
         return response()->json($all_posts,200);
     }
 
@@ -25,18 +31,21 @@ class PostController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validation = Validator::make($request->all(),[
             'image'=>'image:required',
             'caption'=>'required'
         ]);
-        $user_id =2;
+        if ($validation->fails()) {
+            return response()->json(['errors'=>$validation->errors()->all()],422);
+        }
+        $user_id =$request->user()->id;
         $image = $request->file('image');
         $name = $image->getClientOriginalName();
-        $path = $image->store('images');
+        $path = $image->store('public/images');
         $caption = $request->get('caption');
         $post = Post::create([
             'name'=>$name,
@@ -56,6 +65,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+        $post->load(['author.profile','comments.author','likes']);
         return response()->json($post,200);
     }
 

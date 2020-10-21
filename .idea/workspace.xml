@@ -23,22 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/instagram.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ApiAuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ApiAuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +226,11 @@
       <workItem from="1602926370453" duration="6456000" />
       <workItem from="1602949389695" duration="38848000" />
       <workItem from="1603214247285" duration="6843000" />
-      <workItem from="1603256163872" duration="3149000" />
+      <workItem from="1603256163872" duration="5470000" />
+      <workItem from="1603266353763" duration="732000" />
+      <workItem from="1603274297781" duration="4996000" />
+      <workItem from="1603283614073" duration="3819000" />
+      <workItem from="1603293184395" duration="4108000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
@@ -674,9 +670,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" width="672" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602928676199" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603257087170">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603299518598">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603257087170" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603299518598" />
   </component>
 </project>
