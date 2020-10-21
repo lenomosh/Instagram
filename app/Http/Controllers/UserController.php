@@ -33,7 +33,8 @@ class UserController extends Controller
         $request->validate([
             'name'=>'required|min:3',
             'email'=>'required|email',
-            'password'=>'required|min:8'
+            'password'=>'required|min:8',
+            'username'=>'required'
         ]);
         $password = Hash::make($request->get('password'));
         $email = $request->get('email');
@@ -41,10 +42,16 @@ class UserController extends Controller
         if (count($query)) {
             return response()->json("User with the email already exists",409);
         }
+        $username = $request->get('username');
+        $query = User::where('username',$username)->get();
+        if (count($query)) {
+            return response()->json("Username already taken",409);
+        }
         $user = User::create([
             'name'=>$request->get('name'),
             'email'=>$email,
-            'password'=>$password
+            'password'=>$password,
+            'username'=>$username
         ]);
         $profile = Profile::create([
             'user_id'=>$user->id

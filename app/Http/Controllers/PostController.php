@@ -17,7 +17,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $all_posts = Post::all();
+        $all_posts = Post::with(['author.profile','comments.author','likes'])->get();
         return response()->json($all_posts,200);
     }
 

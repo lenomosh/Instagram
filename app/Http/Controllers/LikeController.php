@@ -31,6 +31,13 @@ class LikeController extends Controller
             'user_id'=>'required|int',
             'post_id'=>'required|int'
         ]);
+        $user_id = $request->get('user_id');
+        $post_id = $request->get('post_id');
+        $query = Like::where('user_id',$user_id)->where('post_id',$post_id)->get();
+        if (count($query)) {
+            return response()->json("Already Liked",409);
+
+        }
         $like = Like::create($request->all());
         return response()->json($like,200);
     }

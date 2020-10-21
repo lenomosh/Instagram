@@ -23,32 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
+      <change beforePath="$PROJECT_DIR$/.idea/instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/instagram.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/LoginPage/LoginPage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/Category/PitchesFromCategory.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/Index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/Index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/create/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/create/Create.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/create/Create.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Pitch/read/read.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/helpers/GetPitchCategories/GetPitchCategories.styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/hompage/AuthHomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/AuthHomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/hompage/PublicHomepage.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/base.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/Base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/base.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/user/create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/user/create.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/user/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/user/login.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +170,17 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ix3HoDuEMnV8ZKC7LtYKA5n5eD" />
@@ -232,6 +233,8 @@
       <workItem from="1602835445536" duration="2636000" />
       <workItem from="1602926370453" duration="6456000" />
       <workItem from="1602949389695" duration="38848000" />
+      <workItem from="1603214247285" duration="6843000" />
+      <workItem from="1603256163872" duration="3149000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
@@ -592,6 +595,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added post.react.jsx" />
@@ -630,6 +634,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1603033009301" />
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603256696963">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1603256696963" />
     <state x="110" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603086800991">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -666,9 +674,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" width="672" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602928676199" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603081926786">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603257087170">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603081926786" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603257087170" />
   </component>
 </project>
