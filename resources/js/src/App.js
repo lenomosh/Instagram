@@ -7,9 +7,7 @@ import PublicHomepage from "./components/homepage/PublicHomepage";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import LoginPage from "./Pages/LoginPage/LoginPage.component";
 import RegistrationPage from "./Pages/RegistrationPage/RegistrationPage.component";
-import PostCreate from "./components/Post/create/Create";
 import UserProfile from "./components/ProfilePage/UserProfile.component";
-import PostRead from "./components/Post/read/read";
 
 function App({currentUser}) {
 
@@ -32,6 +30,7 @@ function App({currentUser}) {
                   {currentUser?<Redirect to={'/'}/>:<RegistrationPage/>}
 
               </Route>
+              <Route component={PageNotFound} />
           </Switch>
       </div>
 

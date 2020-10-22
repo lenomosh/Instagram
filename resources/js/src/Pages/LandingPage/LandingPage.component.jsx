@@ -4,9 +4,10 @@ import UserLogin from "../../components/user/login.component";
 const LandingPage = ()=>{
     return(
         <div className={'landingPage container'}>
-            <div className="row">
+            <div className="row mt-5">
                 <div className="col-sm-7">
                     <div className="landing-page-promo">
+
 
                     </div>
                 </div>

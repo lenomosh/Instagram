@@ -4,7 +4,7 @@ import Input from "antd/es/input";
 import Button from "antd/es/button";
 import Axios from "axios";
 import apiUrls from "../environment";
-import {Divider, message} from "antd/es";
+import {Divider, message, Popover} from "antd/es";
 import {connect} from "react-redux";
 import {setCurrentUser} from "../../redux/user/user.actions";
 import {Link, Redirect} from "react-router-dom";
@@ -87,12 +87,19 @@ const UserLogin =({loginUser})=>{
                                             </Button>
                                             <Divider>or</Divider>
                                             <div className="text-center">
-                                                <button className={"btn btn-link"}>
-                                                    <span className={"login-social-link"}>Login with Facebook </span>
+                                                <Popover content={"Coming soon"}>
+
+                                                    <button className={"btn btn-link"}>
+
+                                                        <span className={"login-social-link"}>Login with Facebook </span>
 
 
-                                                </button>
-                                                <a className={"login-forgot-password"} href="#">Forgot password?</a>
+                                                    </button>
+                                                </Popover>
+                                                <Popover content={"Coming Soon"}>
+
+                                                    <a className={"login-forgot-password"} href="#">Forgot password?</a>
+                                                </Popover>
 
                                             </div>
                                         </Form.Item>

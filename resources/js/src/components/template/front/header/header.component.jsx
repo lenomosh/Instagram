@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {connect} from "react-redux";
 import {logoutCurrentUser} from "../../../../redux/user/user.actions";
-import {Link,Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {
     HomeOutlined,
     SendOutlined,
@@ -17,7 +17,7 @@ import apiUrls, {axiosHeader, siteUrl} from "../../../environment";
 import Popover from "antd/es/popover";
 import Button from "antd/es/button";
 import './header.styles.scss';
-import {Badge, Input, Upload, message, Divider, Spin, Typography} from "antd/es";
+import {Badge, Input, Upload, message,  Spin, Typography} from "antd/es";
 import Modal from "antd/es/modal";
 import Axios from "axios";
 import List from "antd/es/list";

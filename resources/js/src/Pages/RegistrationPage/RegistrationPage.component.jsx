@@ -1,8 +1,6 @@
 import React from 'react'
 import './RegistrationPage.styles.scss'
-import UserLogin from "../../components/user/login.component";
 import UserCreate from "../../components/user/create.component";
-import {Link} from "react-router-dom";
 const RegistrationPage = ()=>{
 
     return(

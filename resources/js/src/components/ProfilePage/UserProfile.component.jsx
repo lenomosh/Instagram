@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {Tabs, Row, Col, Avatar, Typography, Rate, Button, message, Layout} from "antd";
-import {Switch, useParams} from 'react-router-dom'
+import {Tabs, Avatar,  Button, message, Layout} from "antd";
+import { useParams} from 'react-router-dom'
 import "./UserProfile.styles.scss";
 import Axios from "axios";
 import apiUrls, {axiosHeader, siteUrl} from "../environment";
@@ -10,12 +10,10 @@ import {
     SolutionOutlined,
     HeartFilled,
     MessageFilled,
-    CameraOutlined,
     SmileOutlined
 } from '@ant-design/icons'
 import {connect, useSelector} from "react-redux";
 import List from "antd/es/list";
-import PostRead from "../Post/read/read";
 import Upload from "antd/es/upload";
 import {UploadOutlined} from '@ant-design/icons'
 import Paragraph from "antd/es/typography/Paragraph";
@@ -29,7 +27,6 @@ const UserPost = ({post}) => {
     const toggleShowStats = () => {
         setHidePostStats(!hidePostStats)
     }
-    const [loading, setLoading] = useState(false);
 
     return (
         <div onMouseEnter={toggleShowStats} onMouseLeave={toggleShowStats}
@@ -75,7 +72,6 @@ const LoadUserPosts = ({posts}) => {
         </div>
     )
 }
-const {Title, Text} = Typography;
 const {TabPane} = Tabs
 const {Content} = Layout
 const UserProfile = () => {
@@ -171,7 +167,7 @@ const UserProfile = () => {
         return () => {
 
         };
-    }, [userProfile.length]);
+    }, );
 
     const changeUserBio = value => {
         Axios.patch(`${apiUrls.profile.update + currentUser.user.profile.id}`, {

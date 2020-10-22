@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import PostCommentCreate from "./create/Create";
+import React from 'react'
 import PostCommentRead from "./read/Read";
 import List from "antd/es/list";
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Result, Button } from 'antd';
-import HeaderTemplate from "../../components/template/front/header/header.component";
 
 const PageNotFound = () =>{
 

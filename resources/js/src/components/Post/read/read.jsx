@@ -1,35 +1,24 @@
 import React, {useState} from 'react'
 import {Avatar} from "antd";
 import {
-    CommentOutlined,
-    DislikeOutlined,
     EllipsisOutlined,
     HeartOutlined,
     HeartFilled,
     MessageOutlined,
-    LikeOutlined,
-    MoreOutlined,
     SendOutlined,
-    UserOutlined
 } from "@ant-design/icons";
-import HTMLReactParser from "html-react-parser";
 import PostCommentIndex from "../../Comment";
-import Moment from "react-moment";
 import apiUrls, {axiosHeader, siteUrl} from "../../environment";
 import './read.scss'
-import {PostAction} from "../Index";
 import {message} from "antd/es";
-import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import Paragraph from "antd/lib/typography/Paragraph";
 import PostCommentCreate from "../../Comment/create/Create";
 import Axios from "axios";
-import List from "antd/es/list";
 
 const PostRead = ({post,token}) => {
     const [hideLikeHeart, setHideLikeHeart] = useState(true);
     const [user_has_liked, setUser_has_liked] = useState(post.user_has_liked);
-    const [likeId, setLikeId] = useState(null);
     const [likeCount, setLikeCount] = useState(post.likes.length);
     const [comments, setComments] = useState(post.comments);
 

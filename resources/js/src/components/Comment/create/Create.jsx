@@ -1,12 +1,11 @@
 import React from 'react'
-import { Comment, Avatar, Form, Button, Input } from 'antd';
+import { Comment, Form, Button, Input } from 'antd';
 import {message} from "antd/es";
 import Axios from "axios";
 import apiUrls from "../../environment";
 import {connect} from "react-redux";
 import Spin from "antd/es/spin";
 
-const { TextArea } = Input;
 
 
 

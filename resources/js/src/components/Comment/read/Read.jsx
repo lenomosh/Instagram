@@ -1,6 +1,5 @@
 import React from 'react'
-import {Comment,Avatar} from "antd";
-import apiUrls from "../../environment";
+import {Comment} from "antd";
 import {Link} from "react-router-dom";
 import './Read.scss'
 

@@ -1,17 +1,12 @@
 import React from 'react'
-import UserLogin from "../user/login.component";
-import {Switch,Route,Redirect} from "react-router-dom";
-import UserCreate from "../user/create.component";
-import HeaderTemplate from "../template/front/header/header.component";
 import LandingPage from "../../Pages/LandingPage/LandingPage.component";
 import './PublicHomepage.styles.scss'
-import PageNotFound from "../../Pages/PageNotFound/PageNotFound";
 
 const PublicHomepage = ()=>{
 
 
     return (
-        <div>
+        <div className={"public-homepage"}>
             <LandingPage/>
         </div>
     )

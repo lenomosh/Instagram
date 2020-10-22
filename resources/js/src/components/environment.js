@@ -9,7 +9,8 @@ const apiUrls = {
     profile:{
         update:apiUrl+'profile/',
         search:apiUrl+'search',
-        read:apiUrl+'profile/'
+        read:apiUrl+'profile/',
+        index:apiUrl+'profile'
     },
     follower:{
         create:apiUrl+'follower',
