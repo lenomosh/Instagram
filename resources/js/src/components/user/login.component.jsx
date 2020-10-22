@@ -15,8 +15,9 @@ const UserLogin =({loginUser})=>{
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const onFinish = values => {
+        const url = apiUrls.user.login
         setLoading(true)
-        Axios.post(apiUrls.user_login, {
+        Axios.post(`${url}`, {
             password: values.password,
             username: values.username,
             remember:values.remember
@@ -28,9 +29,17 @@ const UserLogin =({loginUser})=>{
             message.success('Login was success!',5)
             setSuccess(true)
 
-
         }).catch(err =>{
-            message.error(err.response.data.description,10)
+            if (err.response?.status === 409){
+                message.error("Invalid credentials")
+            }else if (err.response?.status ===400){
+                err.response.data.errors.map(e=>message.error(e,5))
+            }else if (err.response?.status === 404){
+                message.error("User not found!",5)
+            }else{
+                message.error("Internal Server Error",5)
+            }
+            console.log(err)
             setLoading(false)
         })
     };
@@ -61,7 +70,10 @@ const UserLogin =({loginUser})=>{
                                         </Form.Item>
                                         <Form.Item
                                             name="password"
-                                            rules={[{ required: true, message: 'Please input your Password!' }]}
+                                            rules={[
+                                                { required: true, message: 'Please input your Password!' },
+                                                {min:6, message:"Password must be at least 6 characters"}
+                                                ]}
                                         >
                                             <Input
                                                 type="password"

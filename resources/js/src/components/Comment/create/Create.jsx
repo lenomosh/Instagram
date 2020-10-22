@@ -38,21 +38,25 @@ class PostCommentCreate extends React.Component {
             return message.warn("You can not submit a blank comment",5)
         }
         this.setState({loading:true})
-        Axios.post(apiUrls.comment.create,{
+        Axios.post(`${apiUrls.comment.create}`,{
             content:this.state.value,
-            post_id:this.props.postID,
-            user_id:this.props.currentUser.user.id
+            post_id:this.props.post_id,
         },{
             headers:{
-                Authorization:`Bearer ${this.props.currentUser.access_token}`
+                Authorization:`Bearer ${this.props.token}`
             }
         }).then(
             res=> {
                 message.success("Comment posted successfully!",5)
-                this.props.onFinishedCreating(res.data)
+                this.props.onFinish(res.data)
                 this.setState({loading:false})
             }
         ).catch(err=>{
+            if (err.response){
+                if (err.response.status===422){
+                    return err.response.data.errors.map(e=>message.error(e,5))
+                }
+            }
             message.error(err.response.data.description,5)
             this.setState({loading:true})
 
@@ -72,7 +76,7 @@ class PostCommentCreate extends React.Component {
     render() {
         const {value,loading } = this.state;
         return (
-            <Spin spinning={loading}>
+            <Spin spinning={false}>
                 <Comment
                     content={
                         <Editor

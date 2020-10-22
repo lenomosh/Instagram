@@ -16,10 +16,22 @@ function App({currentUser}) {
   return (
       <div>
           <Switch>
-              <Route exact path={'/'} component={AuthHomepage}/>
-              <Route exact path={'/profile'} component={UserProfile}/>
-              <Route path={'/login'} component={LoginPage}/>
-              <Route path={'/signup'} component={RegistrationPage}/>
+              <Route exact path={'/'} render={()=>{
+                  if (currentUser) return (<AuthHomepage/>)
+                  return(<PublicHomepage/>)
+              }}/>
+              <Route exact path={'/profile/:profile_id'}>
+                  {
+                  currentUser? <UserProfile/>: <Redirect to={'/'}/>
+              }
+              </Route>
+              <Route exact path={'/login'}>
+                  {currentUser?<Redirect to={'/'}/>:<LoginPage/>}
+              </Route>
+              <Route exact path={'/signup'}>
+                  {currentUser?<Redirect to={'/'}/>:<RegistrationPage/>}
+
+              </Route>
           </Switch>
       </div>
 

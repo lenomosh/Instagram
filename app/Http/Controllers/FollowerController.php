@@ -28,9 +28,9 @@ class FollowerController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'user_id'=>'int|required',
             'profile_id'=>'int|required'
         ]);
+        $request['user_id']=$request->user()->id;
         $follower = Follower::create($request->all());
         return response()->json($follower,200);
     }

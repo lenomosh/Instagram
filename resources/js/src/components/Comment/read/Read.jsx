@@ -1,12 +1,18 @@
 import React from 'react'
 import {Comment,Avatar} from "antd";
 import apiUrls from "../../environment";
+import {Link} from "react-router-dom";
+import './Read.scss'
 
-const PostCommentRead =()=>{
+const PostCommentRead =({comment})=>{
     return (
             <Comment
-                author={"Jane Doe"}
-                content={"Lorem ipsum dolor sit amet"}
+                className={"post-comment-read-wrapper"}
+                content={<span>
+                    <Link to={'/profile/'+comment.author.profile.id}><span style={{fontWeight:"bold",color:"black"}}>{comment.author.name}:  </span>
+                    </Link> {comment.content}
+
+                </span>}
             />
 
     )

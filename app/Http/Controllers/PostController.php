@@ -19,10 +19,11 @@ class PostController extends Controller
      */
     public function index(Request $request)
     {
-        $all_posts = Post::with(['author.profile','comments.author','likes'])->get();
+        $all_posts = Post::with(['author.profile','comments.author.profile','likes'])->orderBy('CREATED_AT','desc')->get();
         foreach ($all_posts as $post){
             $post['path'] = Storage::url($post['path']);
-            $post['user_has_liked'] = Like::where('user_id',$request->user()->id)->first();
+            $post['user_has_liked'] = Like::where('user_id',$request->user()->id)->where('post_id',$post->id)->first();
+            $post['author']['profile']['profile_picture'] = Storage::url($post->author->profile->profile_picture);
         }
         return response()->json($all_posts,200);
     }

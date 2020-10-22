@@ -1,41 +1,41 @@
 import React, {useState} from 'react'
-import {QuestionCircleOutlined} from '@ant-design/icons'
-import {Form, Input, Tooltip, Checkbox, Button} from "antd";
+// import {QuestionCircleOutlined} from '@ant-design/icons'
+import {Form, Input,  Button} from "antd";
 import Axios from "axios";
-import apiUrls from "../environment";
+import apiUrls, {axiosHeader} from "../environment";
 import {message} from "antd/es";
 import {Link, Redirect} from "react-router-dom";
-import Divider from "antd/es/divider";
 import Spin from "antd/es/spin";
+import {processError} from "../requests";
+import {setCurrentUser} from "../../redux/user/user.actions";
+import {connect} from "react-redux";
 import './create.styles.scss'
 
 
-const UserCreate = () => {
+const UserCreate = ({loginUser}) => {
     const [form] = Form.useForm();
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const onFinish = (values) => {
-        setLoading(true)
+    const url =apiUrls.user.create
+    const  handleFinish=values=>{
+        console.log(values)
+        Axios.post(url,values,{
+            headers:axiosHeader
+        }
+    ).then(res => {
+        message.success('Account created successfully.', 5)
+        setSuccess(true)
+        setLoading(false)
+    }).catch(err => {
+                if (err.response.status === 422){
+                    err.response.data.errors.map(err=>message.error(err,5))
+                }
+                setLoading(false)
+                console.log(err)
+    })
+        console.log("*".repeat(10),"Onfinish Called","*".repeat(10))
 
-        Axios.post(apiUrls.user_create, {
-            name: values.name,
-            email: values.email,
-            password: values.password,
-            username: values.username
-        }, {
-            Accept: 'application/json'
-        }).then(res => {
-
-            message.success('Account created successfully.', 10)
-
-            setSuccess(true)
-            setLoading(false)
-        }).catch(err => {
-            message.error(err.response.data.description, 10)
-            setLoading(false)
-            // console.log(err.response)
-        })
     };
 
     return (
@@ -50,7 +50,7 @@ const UserCreate = () => {
                                 <Form
                                     form={form}
                                     name="register"
-                                    onFinish={onFinish}
+                                    onFinish={data=>handleFinish(data)}
                                     scrollToFirstError
                                     layout={'vertical'}
                                 >
@@ -58,6 +58,7 @@ const UserCreate = () => {
                                         <div className="col-sm-6">
                                             <Form.Item
                                                 name="name"
+                                                // initialValue={"Lennox"}
                                                 rules={[
                                                     {
                                                         required: true,
@@ -71,6 +72,7 @@ const UserCreate = () => {
                                         <div className="col-sm-6">
                                             <Form.Item
                                                 name="username"
+                                                // initialValue={"lennox"}
                                                 rules={[
                                                     {
                                                         required: true,
@@ -79,13 +81,14 @@ const UserCreate = () => {
                                                     },
                                                 ]}
                                             >
-                                                <Input placeholder={"Username"}/>
+                                                <Input  placeholder={"Username"}/>
                                             </Form.Item>
                                         </div>
                                     </div>
 
                                     <Form.Item
                                         name="email"
+                                        // initialValue={"lenomosh@gmail.com"}
                                         rules={[
                                             {
                                                 type: 'email',
@@ -106,19 +109,20 @@ const UserCreate = () => {
 
                                             <Form.Item
                                                 name="password"
+                                                // initialValue={"lenomosh@gmail.com"}
                                                 rules={[
                                                     {
                                                         required: true,
                                                         message: 'Please input your password!',
                                                     },
                                                     {
-                                                        min: 8,
+                                                        min: 6,
                                                         message: "Password must be at least 8 characters"
                                                     }
                                                 ]}
                                                 hasFeedback
                                             >
-                                                <Input.Password placeholder={"Password"}/>
+                                                <Input.Password  placeholder={"Password"}/>
                                             </Form.Item>
 
                                         </div>
@@ -126,6 +130,7 @@ const UserCreate = () => {
                                             <Form.Item
                                                 name="confirm"
                                                 dependencies={['password']}
+                                                // initialValue={"lenomosh@gmail.com"}
                                                 hasFeedback
                                                 rules={[
                                                     {
@@ -143,7 +148,7 @@ const UserCreate = () => {
                                                     }),
                                                 ]}
                                             >
-                                                <Input.Password placeholder={"Confirm Password"}/>
+                                                <Input.Password  placeholder={"Confirm Password"}/>
                                             </Form.Item>
 
 
@@ -173,4 +178,5 @@ const UserCreate = () => {
         </div>
     );
 }
-export default UserCreate
+const mapDispatchToProps = dispatch=>({loginUser:user=>dispatch(setCurrentUser(user))})
+export default connect(null,mapDispatchToProps) (UserCreate)

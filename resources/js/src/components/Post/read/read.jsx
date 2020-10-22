@@ -15,7 +15,7 @@ import {
 import HTMLReactParser from "html-react-parser";
 import PostCommentIndex from "../../Comment";
 import Moment from "react-moment";
-import apiUrls from "../../environment";
+import apiUrls, {axiosHeader, siteUrl} from "../../environment";
 import './read.scss'
 import {PostAction} from "../Index";
 import {message} from "antd/es";
@@ -23,42 +23,94 @@ import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import Paragraph from "antd/lib/typography/Paragraph";
 import PostCommentCreate from "../../Comment/create/Create";
+import Axios from "axios";
+import List from "antd/es/list";
 
-const PostRead = () => {
+const PostRead = ({post,token}) => {
     const [hideLikeHeart, setHideLikeHeart] = useState(true);
-    const [user_has_liked, setUser_has_liked] = useState(false);
-    const [likeCount, setLikeCount] = useState(20);
-
+    const [user_has_liked, setUser_has_liked] = useState(post.user_has_liked);
+    const [likeId, setLikeId] = useState(null);
+    const [likeCount, setLikeCount] = useState(post.likes.length);
+    const [comments, setComments] = useState(post.comments);
 
     const likePost =()=>{
-        setHideLikeHeart(false)
-        if (!user_has_liked) {
-            setLikeCount(likeCount + 1)
-            setUser_has_liked(true)
+        if (!user_has_liked){
+            setHideLikeHeart(false)
+            Axios.post(`${apiUrls.like.create}`,{post_id:post.id},{
+                headers:{
+                    ...axiosHeader,
+                    Authorization:`Bearer ${token}`
+                }
+            }).then(res=>{
+                setUser_has_liked(res.data)
+            }).catch(err=>{
+                if (err.response){
+                    if (err.response.status ===409){
+                        message.error("Already Liked!",4)
+                    }else if (err.response.status === 422){
+                        err.response.data.errors.map(e=>message.error(e,4))
+                    }else{
+                        message.error("Internal Server Error!",5)
+                        console.log(err)
+                    }
+                }
+
+            })
+            if (!user_has_liked) {
+                setLikeCount(likeCount + 1)
+            }
+            setTimeout(()=>{
+                setHideLikeHeart(true)
+            },1000)
         }
-        setTimeout(()=>{
-            setHideLikeHeart(true)
-        },1000)
+
+
 
     }
     const unlikepost = ()=>{
-        setUser_has_liked(false)
-        setLikeCount(likeCount-1)
+        if (user_has_liked){
+            Axios.delete(`${apiUrls.like.del+post.user_has_liked.id}`,{
+                headers:{
+                    ...axiosHeader,
+                    Authorization:`Bearer ${token}`
+                }
+            }).then(res=>{
+                setUser_has_liked(null)
+                setLikeCount(likeCount-1)
+            }).catch(err=>{
+                console.log(err)
+
+            })
+        }
+
     }
+    // console.log("=".repeat(100))
+    // console.log("user_has_liked",user_has_liked)
+    // console.log("like_count",likeCount)
+    // console.log("post_id",post.id)
+    // console.log("post url",siteUrl+post.author.profile.profile_picture)
     return (
         <div className={'PostRead'}>
             <div className="card">
                 <div className="card-body">
                     <div className="post-read-card-header">
-                        <Avatar className={"post-read-card-header-avatar"}/>
-                        <span>
-                            <a className={"post-read-username"} href="#">_lennoxomondi</a>
+                        <Link  to={`/profile/${post.user_id}`}>
+
+                        {post.author.profile.profile_picture?
+                        <Avatar
+                            src={`${siteUrl+post.author.profile.profile_picture}`}
+                            className={"post-read-card-header-avatar"}/>
+                            :null}
+                        <span className={"post-read-username"}>
+                                {post.author.username}
                         </span>
+                        </Link>
+
                         <span className="post-read-options">
                             <EllipsisOutlined className={"post-read-options-icon"}/>
                         </span>
                     </div>
-                    <div onDoubleClick={likePost} className="post-read-media-content">
+                    <div style={{backgroundImage:`url(${siteUrl+ post.path})`}} onDoubleClick={likePost} className="post-read-media-content">
                         <HeartFilled hidden={hideLikeHeart} className={"post-read-double-tap-icon"} />
 
 
@@ -75,25 +127,21 @@ const PostRead = () => {
                             <SendOutlined className={"post-read-action-icon"}/>
                         </div>
                         <div className="post-read-likes-count">
-                            {likeCount} likes
+                            {`${likeCount} ${likeCount===1?'like':'likes'} `}
                         </div>
                         <div className="post-read-caption">
                             <Paragraph
                                 ellipsis={{
                                     rows:1,
                                     expandable: true,
-                                    onEllipsis: ellipsis => {
-                                        console.log('Ellipsis changed:', ellipsis);
-                                    },
+                                    symbol: 'more'
                                 }}
                             >
-                                <span className={"post-read-caption-author"}>_lennoxomondi: </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam corporis dolor est et explicabo illo impedit itaque iure laudantium magni nostrum possimus, quasi, quidem quisquam quo reprehenderit voluptates. Deleniti.
-                            </Paragraph>
+                                <span className={"post-read-caption-author"}>{post.author.username}: </span>{post.caption}</Paragraph>
                         </div>
                         <div className="post-read-comments">
-                            <PostCommentIndex/>
-                            <PostCommentIndex/>
-                            <PostCommentCreate/>
+                            {comments.length>0 && <PostCommentIndex comments={comments}/>}
+                            <PostCommentCreate onFinish={data=>setComments([data,...comments])} post_id={post.id} token={token}/>
 
 
                         </div>

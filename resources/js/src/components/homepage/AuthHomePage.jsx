@@ -18,8 +18,7 @@ const AuthHomepage = ({currentUser})=>{
             <Content style={{ padding: '70px' }}>
                 <div className="row m-auto">
                     <div className="col-sm-6">
-                        {/*<UserProfile/>*/}
-                        <PostRead/>
+                        <PostIndex/>
 
                     </div>
                     <div className="col-sm-5">

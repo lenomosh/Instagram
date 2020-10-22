@@ -7,6 +7,7 @@ use App\Models\Profile;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
@@ -41,7 +42,7 @@ class ApiAuthController extends Controller
         $profile = Profile::create([
             'user_id'=>$user->id
         ]);
-        $response = ['token' => $token,'user'=>$user];
+        $response = ['token' => $token,'user'=>$user->load(['profile'])];
         return response($response, 200);
     }
 
@@ -61,6 +62,10 @@ class ApiAuthController extends Controller
         if ($user) {
             if (Hash::check($request->password, $user->password)) {
                 $token = $user->createToken('Laravel Password Grant Client')->accessToken;
+                $user->load(['profile']);
+                if (!is_null($user->profile->profile_picture)) {
+                    $user['profile']['profile_picture']= Storage::url($user->profile->profile_picture);
+                }
                 $response = ['token' => $token,'user'=>$user];
                 return response($response, 200);
             } else {

@@ -4,6 +4,7 @@ import PostRead from "./read/read";
 import apiUrls, {axiosHeader} from "../environment";
 import {connect} from "react-redux";
 import {Spin} from "antd";
+import List from "antd/es/list";
 export const PostAction = ({data,onFinishedSubmit, onErrorOccurred,access_token})=>{
     Axios.post(apiUrls.action.create,data,{
         headers:{
@@ -16,35 +17,43 @@ export const PostAction = ({data,onFinishedSubmit, onErrorOccurred,access_token}
 }
 
 const PostIndex = ({currentUser})=>{
-    const [posts, setPosts] = useState(null);
+    const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
 
-   /* useEffect(() => {
-        if (!posts){
+    useEffect(() => {
+        if (!posts.length){
+
             setLoading(true)
             Axios
-                .get(apiUrls.post.index,{
+                .get(`${apiUrls.post.index}`,{
                     headers:{
                         ...axiosHeader,
-                        Authorization:'Bearer '+ currentUser.access_token
+                        Authorization:'Bearer '+ currentUser.token
                     }
                 })
                 .then(res=> {
                     setPosts(res.data)
                     setLoading(false)
+                    // console.log(res)
                 })
                 .catch(err=> {
                     setLoading(false)
-                    // console.log(err)
+                    console.log(err)
                 })
         }
-    }, );
-    // console.log('Posts from post index',posts)
-*/
+
+    }, [posts.length, currentUser.token] );
     return (
         <Spin spinning={loading} className={'postIndex'}>
-            {posts && posts.map(post=><PostRead key={post.id} post ={post}/>
-            )}
+            <List
+                itemLayout="horizontal"
+                dataSource={posts}
+                renderItem={item => (
+                    <List.Item>
+                        <PostRead token={currentUser.token} post={item}/>
+                    </List.Item>
+                )}
+            />
         </Spin>
     )
 }

@@ -39,7 +39,7 @@ class CommentController extends Controller
         $user_id = $request->user()->id;
         $request['user_id']=$user_id;
         $comment = Comment::create( $request->all());
-        return response()->json($comment->load(['author']),200);
+        return response()->json($comment->load(['author.profile']),200);
     }
 
     /**

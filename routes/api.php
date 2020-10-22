@@ -25,6 +25,7 @@ Route::middleware('auth:api')->group(function () {
     Route::apiResource('/like',\App\Http\Controllers\LikeController::class);
     Route::apiResource('/profile',\App\Http\Controllers\ProfileController::class);
     Route::apiResource('/follower',\App\Http\Controllers\FollowerController::class);
+    Route::post('/search',[\App\Http\Controllers\ProfileController::class,'search']);
     Route::get('/user',function (Request $request){
         return $request->user();
     });

@@ -25,6 +25,14 @@
           font-size: 1.5rem;
         }
       }
+      .user-profile-action-follow-button{
+        text-align: center;
+        border-radius: 5px;
+        span{
+          padding: 0;
+          margin: 0;
+        }
+      }
     }
 
     .user-profile-header-user-stats{
@@ -47,7 +55,8 @@
   }
   .user-post-wrapper{
     position: relative;
-    background-color: red;
+    background-color: white;
+    background-position: center;
     width: 293px;
     height: 293px;
     cursor: pointer;

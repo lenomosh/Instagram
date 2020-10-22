@@ -11,9 +11,11 @@
     .post-read-username{
       padding-left: 10px;
       color: black;
-      font-size: 1rem;
+      font-size: initial  ;
       &:hover{
-        text-decoration: underline;
+      font-weight: 550;
+        transition: .5s ease-in;
+
       }
     }
     .post-read-options{
@@ -25,12 +27,20 @@
     }
   }
   .post-read-media-content{
-  background-color: black;
-  width: 100%;
+  background-color: white;
+    background-position: center;
+  width: 600px;
   margin: 0;
   padding: 0;
   height: 500px;
-  max-height: 1000px;
+    max-width: 600px;
+    overflow: hidden;
+  max-height: 700px;
+    .post-read-media-content-image{
+      object-fit: cover;
+      object-position: inherit;
+
+    }
     @keyframes like-heart-fade-in {
       from{
         opacity: 0;
@@ -43,6 +53,7 @@
 
     }
     .post-read-double-tap-icon{
+      z-index: 100;
       position: absolute;
       margin: auto;
       height: inherit;
