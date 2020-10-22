@@ -24,12 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +189,11 @@
       <recent name="$PROJECT_DIR$/resources/js" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.ExampleTest.testBasicTest">
+    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -208,6 +206,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -233,7 +232,7 @@
       <workItem from="1603301337507" duration="12337000" />
       <workItem from="1603348174786" duration="10558000" />
       <workItem from="1603366396205" duration="4147000" />
-      <workItem from="1603372532439" duration="1240000" />
+      <workItem from="1603372532439" duration="3393000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
@@ -681,9 +680,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" width="672" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602928676199" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603373402100">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603375887457">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603373402100" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603375887457" />
   </component>
 </project>
