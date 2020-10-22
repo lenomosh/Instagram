@@ -23,23 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
-      <change afterPath="$PROJECT_DIR$/resources/js/src/components/requests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/LandingPage/LandingPage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/PageNotFound/PageNotFound.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/Pages/RegistrationPage/RegistrationPage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/create/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Comment/read/Read.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/Post/read/read.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/ProfilePage/UserProfile.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/homepage/AuthHomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/AuthHomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/homepage/PublicHomepage.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/template/front/header/header.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/components/user/login.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/components/user/login.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +232,8 @@
       <workItem from="1603293184395" duration="4766000" />
       <workItem from="1603301337507" duration="12337000" />
       <workItem from="1603348174786" duration="10558000" />
-      <workItem from="1603366396205" duration="2980000" />
+      <workItem from="1603366396205" duration="4147000" />
+      <workItem from="1603372532439" duration="1240000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
@@ -638,6 +629,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="278" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1603054211839" />
+    <state x="386" y="189" width="583" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603371201053">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="386" y="189" width="583" height="423" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1603371201053" />
     <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603033009301">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -686,9 +681,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" width="672" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602928676199" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603369395883">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603373402100">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603369395883" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1603373402100" />
   </component>
 </project>

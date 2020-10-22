@@ -246,7 +246,7 @@ const HeaderTemplate = ({logoutUser, currentUser}) => {
                         </div>
                         <div className="link">
 
-                            <Popover content={"Coming Soon"}>
+                            <Popover placement={"bottom"} content={"Coming Soon"}>
                                 <Badge count={2}>
                                     <SendOutlined className={"header-nav-icon"}/>
                                 </Badge>
@@ -254,19 +254,19 @@ const HeaderTemplate = ({logoutUser, currentUser}) => {
                         </div>
                         <div className="link">
 
-                            <Popover content={"Coming soon"}>
+                            <Popover placement={"bottom"} content={"Coming soon"}>
                                 <CompassOutlined className={"header-nav-icon"}/>
                             </Popover>
                         </div>
                         <div className="link">
-                            <Popover content={"Coming soon"}>
+                            <Popover placement={"bottom"} content={"Coming soon"}>
                                 <Badge count={9}>
                                     <HeartOutlined className={"header-nav-icon"}/>
                                 </Badge>
                             </Popover>
                         </div>
                         <div className="link">
-                                    <Popover content={
+                                    <Popover placement={"bottom"} content={
                                         <div className={"header-popover-user-actions-wrapper"}>
                                             <div className="d-flex flex-column">
                                                 <Link to={"/profile/"+currentUser.user.profile.id} className="header-popover-user-action">

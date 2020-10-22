@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 //Auth::routes();
 
-Route::view('/{path?}','layouts.index');
+Route::view('{path?}','layouts.index')->where('path','.*');

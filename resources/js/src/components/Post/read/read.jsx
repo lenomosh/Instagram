@@ -10,7 +10,7 @@ import {
 import PostCommentIndex from "../../Comment";
 import apiUrls, {axiosHeader, siteUrl} from "../../environment";
 import './read.scss'
-import {message} from "antd/es";
+import {message, Popover} from "antd/es";
 import {Link} from "react-router-dom";
 import Paragraph from "antd/lib/typography/Paragraph";
 import PostCommentCreate from "../../Comment/create/Create";
@@ -112,8 +112,16 @@ const PostRead = ({post,token}) => {
                                 <HeartOutlined  onClick={likePost} className={"post-read-action-icon"}/>
 
                             }
-                            <MessageOutlined className={"post-read-action-icon"}/>
-                            <SendOutlined className={"post-read-action-icon"}/>
+                            <Popover  placement={"bottom"} content={'Coming Soon'} trigger={"click"}>
+
+                                <MessageOutlined className={"post-read-action-icon"}/>
+                            </Popover>
+
+                            <Popover  placement={"bottom"} content={'Coming Soon'} trigger={"click"}>
+
+                                <SendOutlined className={"post-read-action-icon"}/>
+                            </Popover>
+
                         </div>
                         <div className="post-read-likes-count">
                             {`${likeCount} ${likeCount===1?'like':'likes'} `}
