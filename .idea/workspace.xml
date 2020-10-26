@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e8fc31e-e654-4c4b-ae72-788577673746" name="Default Changelist" comment="added barbel config for class compilation + auth controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,6 +234,7 @@
       <workItem from="1603348174786" duration="10558000" />
       <workItem from="1603366396205" duration="4147000" />
       <workItem from="1603372532439" duration="3393000" />
+      <workItem from="1603698499320" duration="922000" />
     </task>
     <task id="LOCAL-00007" summary="added Post.create">
       <created>1602999633044</created>
